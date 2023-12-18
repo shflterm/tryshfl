@@ -10,10 +10,10 @@ const Console = () => {
         "Type 'help' to get help!",
     ]);
 
-    const handleKeyDown = (event: { key: string; target: { value: string; }; }) => {
+    const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
         if (event.key === "Enter") {
-            const input = event.target.value;
-            event.target.value = "";
+            const input = (event.target as HTMLInputElement).value;
+            (event.target as HTMLInputElement).value = "";
 
             switch (input) {
                 case "help":

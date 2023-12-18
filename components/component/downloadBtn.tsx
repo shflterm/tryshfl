@@ -12,6 +12,7 @@ function download(os: string) {
     document.body.removeChild(downloadLink);
 }
 
+// @ts-ignore
 const DownloadBtn = ({className, ...props}) => (
         <div className={className} {...props}>
             <Button className="bg-blue-500 text-white hover:bg-blue-700" type="button"
