@@ -4,6 +4,8 @@ const nextConfig = {
 
     // Add basePath
     basePath: '/',
+
+    config: 'export',
 }
 
 module.exports = nextConfig;
